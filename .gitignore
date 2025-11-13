@@ -1,0 +1,25 @@
+# Eclipse
+.metadata/
+*.tmp
+*.bak
+*.swp
+.project
+.classpath
+.settings/
+.buildpath
+
+# Java / Maven
+target/
+bin/
+*.class
+*.log
+*.war
+*.ear
+
+# IntelliJ
+.idea/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Menu Registration</title>
+    <style type="text/css">
+	body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #e3f2f2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 20px;
+      margin: 0;
+    }
+
+    .header {
+      width: 500px;
+      background-image: url('images/burger.jpg'); /* Make sure the image path is correct */
+      background-size: cover;
+      background-position: center;
+      border-radius: 12px 12px 0 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 70px;
+    }
+
+    .header h1 {
+      color: white;
+      text-align: center;
+      margin: 0;
+      font-size: 20px;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+    }
+
+    form {
+      background-color: #ffffff;
+      padding: 15px 25px; /* Compact */
+      border-radius: 0 0 12px 12px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      width: 500px;
+    }
+
+    label {
+      display: block;
+      margin-top: 8px;
+      font-weight: 500;
+      color: #333;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 6px;
+      margin-top: 3px;
+      border: 1px solid #bbb;
+      border-radius: 5px;
+      font-size: 14px;
+      box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+      margin-top: 12px;
+      background-color: #1976d2;
+      color: white;
+      padding: 8px;
+      width: 100%;
+      border: none;
+      border-radius: 5px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #1565c0;
+    }
+  select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  font-size: 14px;
+  box-sizing: border-box;
+ }
+  </style>
+</head>
+
+<body>
+    <form action="callingMenuServlet" method="post">
+    <div  class="header"><h1>Add a Menu Item</h1></div>
+        <label>Restaurant ID</label><input type="text" name="restaurantId"><br>
+        <label>Item Name</label><input type="text" name="itemname"><br>
+        <label>Description</label><input type="text" name="description"><br>
+        <label>Price</label><input type="text" name="price"><br>
+        <label>Availability</label>
+        <select name="isavailable">
+            <option value="Yes">Available</option>
+            <option value="No">Not Available</option>
+        </select><br><br>
+        <label>Rating</label><input type="text" name="rating"><br>
+        <label>Image Path</label><input type="text" name="imagepath"><br>
+        <input type="submit" value="Add Menu Item">
+    </form>
+</body>
+</html>

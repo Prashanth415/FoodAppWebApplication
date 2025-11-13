@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Registration Title</title>
+<style>
+	body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #e3f2f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  margin: 0;
+}
+
+.header-background {
+  width: 450px; /* Increased width */
+  background-image: url('images/food.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px 12px 0 0;
+  text-align: center;
+  padding: 15px 0; /* Decreased height */
+  margin-bottom: 0;
+}
+
+.header-background h1 {
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  margin: 0;
+  font-size: 22px;
+}
+
+form {
+  background-color: #ffffff;
+  padding: 25px 35px;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  width: 450px; /* Match header width */
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: 500;
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  margin-top: 15px;
+  background-color: #1976d2;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #1565c0;
+}
+	
+ </style>
+
+</head>
+<body>
+
+<form action="callingRegisterServlet" method="post">
+
+<div class="header-background">
+    <h1>Create an Account</h1>
+  </div>
+	<label>Name</label><input type="text" name="name"><br>
+	<label>Username</label><input type="text" name="username"><br>
+	<label>Email</label><input type="email" name="email"><br><br>
+	<label>Password</label><input type="password" name="password"><br>
+	<label>Phonenumber</label><input type="text" name="phonenumber"><br>
+	<label>Address</label><input type="text" name="address"><br>
+	<label>Role</label>
+<select name="role">
+  <option value="Admin">Admin</option>
+  <option value="RestaurantOwner">RestaurantOwner</option>
+  <option value="Customer">Customer</option>
+  <option value="DeliveryPartner">DeliveryPartner</option>
+</select><br>
+	
+	<input type="submit" value="Register">
+</form>
+</body>
+</html>
