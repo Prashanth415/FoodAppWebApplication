@@ -1,0 +1,18 @@
+services:
+  - type: web           # ✅ Must be web | worker | pserv
+    name: foodapp       # Your service name
+    plan: free          # Free plan
+
+    buildCommand: |
+      ./mvnw clean package || mvn clean package
+      chmod +x run.sh
+
+    startCommand: "./run.sh"
+
+
+
+
+
+
+
+
