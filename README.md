@@ -74,12 +74,12 @@ A complete food ordering web application built using Java Servlets, JSP, HTML, C
 
 ## 📷 Demo
 
-👉 https://drive.google.com/file/d/10BwuimwRmRaLPGRE_OBHjyhn6UY0tRPp/view?usp=sharing  
-👉 https://mankitha1910.github.io/FoodDeliveryApplication/
+👉 https://drive.google.com/file/d/1LPYwRGPlKwSD4T0c5458ea89zLA6ANHj/view?usp=drive_link
+👉 https://github.com/Prashanth415/FoodAppWebApplication/
 
 ## 📌 Author
 
-- Ankitha M (mankitha1910)
+- Prashanth A (Prashanth415)
 
 ## 🏷️ Tags
 
